@@ -26,6 +26,7 @@ namespace AplicacaoCadastroCamadas.DAO.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-9B1224L\\SQLEXPRESS;Initial Catalog=bancoCadastro;User ID=sa")]
         public string ConexaoBanco {
             get {
                 return ((string)(this["ConexaoBanco"]));

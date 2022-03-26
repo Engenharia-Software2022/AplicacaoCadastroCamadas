@@ -20,12 +20,13 @@ namespace AplicacaoCadastroCamadas.DAO
             {
                 con.Open();
 
-                con.ConnectionString = @"Data Source = DESKTOP - 9B1224L\SQLEXPRESS; Initial Catalog = bancoCadastro; User ID = sa; Password = 30984312; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+                //con.ConnectionString = @"Data Source=DESKTOP-9B1224L\SQLEXPRESS;Initial Catalog=bancoCadastro;User ID=sa;Password=30984312";
+                con.ConnectionString = Properties.Settings.Default.ConexaoBanco;
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into tb_usuario (dataCadastro, nome_usuario, login_usuario, senha_usuario" + 
-                                    "email_usuario, cpf_usuario, status_usuario" +
-                                        "Value (@dataCadastro, @nome_usuario, @login_usuario, @senha_usuario, @email_usuario, @cpf_usuario, @status_usuario))";
+                cmd.CommandText = "insert into tb_usuario ([dataCadastro], [nome_usuario], [login_usuario], [senha_usuario]" + 
+                                    "[email_usuario], [cpf_usuario], [status_usuario]" +
+                                        "Value (@dataCadastro, @nome_usuario, @login_usuario, @senha_usuario, @email_usuario, @cpf_usuario, @status_usuario)";
 
                 cmd.Parameters.Add("dataCadastro", SqlDbType.DateTime).Value = objUsuarioDTO.DataCadastro;
                 cmd.Parameters.Add("nome_usuario", SqlDbType.VarChar).Value = objUsuarioDTO.Nome;
