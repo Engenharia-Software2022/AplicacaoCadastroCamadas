@@ -1,0 +1,6 @@
+C:\Users\marco\source\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DTO\bin\Debug\AplicacaoCadastroCamadas.DTO.dll
+C:\Users\marco\source\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DTO\bin\Debug\AplicacaoCadastroCamadas.DTO.pdb
+C:\Users\marco\source\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DTO\obj\Debug\AplicacaoCadastroCamadas.DTO.csproj.AssemblyReference.cache
+C:\Users\marco\source\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DTO\obj\Debug\AplicacaoCadastroCamadas.DTO.csproj.CoreCompileInputs.cache
+C:\Users\marco\source\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DTO\obj\Debug\AplicacaoCadastroCamadas.DTO.dll
+C:\Users\marco\source\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DTO\obj\Debug\AplicacaoCadastroCamadas.DTO.pdb
