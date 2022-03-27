@@ -273,7 +273,7 @@
             this.mtbDataCadastro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mtbDataCadastro.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.mtbDataCadastro.Location = new System.Drawing.Point(127, 49);
-            this.mtbDataCadastro.Mask = "00/00/0000";
+            this.mtbDataCadastro.Mask = "00/00/0000 90:00";
             this.mtbDataCadastro.Name = "mtbDataCadastro";
             this.mtbDataCadastro.ReadOnly = true;
             this.mtbDataCadastro.Size = new System.Drawing.Size(100, 25);

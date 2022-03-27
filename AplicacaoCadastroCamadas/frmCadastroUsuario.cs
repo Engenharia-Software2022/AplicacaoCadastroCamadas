@@ -25,7 +25,7 @@ namespace AplicacaoCadastroCamadas
         }
 
         UsuarioDTO objUsuarioDTO = new UsuarioDTO();
-        //UsuarioModel objUsuarioModel = new UsuarioModel();
+        UsuarioModel objUsuarioModel = new UsuarioModel();
 
 
         private string modo = "";
@@ -84,10 +84,7 @@ namespace AplicacaoCadastroCamadas
                         MessageBox.Show("Erro ao salvar dados do usuário: " + ex.Message);
                     }
 
-
-
                     break;
-
             }
 
         }
