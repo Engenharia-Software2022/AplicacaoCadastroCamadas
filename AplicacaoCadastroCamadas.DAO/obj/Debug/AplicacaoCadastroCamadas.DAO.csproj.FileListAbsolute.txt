@@ -8,3 +8,13 @@ C:\Users\marco\source\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.D
 C:\Users\marco\source\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\obj\Debug\AplicacaoCadastroCamadas.DAO.dll
 C:\Users\marco\source\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\obj\Debug\AplicacaoCadastroCamadas.DAO.pdb
 C:\Users\marco\source\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\bin\Debug\AplicacaoCadastroCamadas.DAO.dll.config
+C:\Users\Marcos\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\bin\Debug\AplicacaoCadastroCamadas.DAO.dll.config
+C:\Users\Marcos\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\bin\Debug\AplicacaoCadastroCamadas.DAO.dll
+C:\Users\Marcos\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\bin\Debug\AplicacaoCadastroCamadas.DAO.pdb
+C:\Users\Marcos\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\bin\Debug\AplicacaoCadastroCamadas.DTO.dll
+C:\Users\Marcos\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\bin\Debug\AplicacaoCadastroCamadas.DTO.pdb
+C:\Users\Marcos\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\obj\Debug\AplicacaoCadastroCamadas.DAO.csproj.AssemblyReference.cache
+C:\Users\Marcos\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\obj\Debug\AplicacaoCadastroCamadas.DAO.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\obj\Debug\AplicacaoCadastroCamadas.DAO.csproj.CopyComplete
+C:\Users\Marcos\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\obj\Debug\AplicacaoCadastroCamadas.DAO.dll
+C:\Users\Marcos\repos2\AplicacaoCadastroCamadas\AplicacaoCadastroCamadas.DAO\obj\Debug\AplicacaoCadastroCamadas.DAO.pdb

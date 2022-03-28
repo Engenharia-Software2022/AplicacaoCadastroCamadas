@@ -276,7 +276,7 @@
             this.mtbDataCadastro.Mask = "00/00/0000 90:00";
             this.mtbDataCadastro.Name = "mtbDataCadastro";
             this.mtbDataCadastro.ReadOnly = true;
-            this.mtbDataCadastro.Size = new System.Drawing.Size(100, 25);
+            this.mtbDataCadastro.Size = new System.Drawing.Size(144, 25);
             this.mtbDataCadastro.TabIndex = 57;
             this.mtbDataCadastro.ValidatingType = typeof(System.DateTime);
             // 
@@ -440,7 +440,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(762, 534);
+            this.ClientSize = new System.Drawing.Size(770, 534);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

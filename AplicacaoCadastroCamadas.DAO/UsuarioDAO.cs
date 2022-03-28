@@ -26,10 +26,10 @@ namespace AplicacaoCadastroCamadas.DAO
                 con.Open();
 
                 //Parei aqui erro, consulta parametrizada pedindo parametros
-                cmd.CommandText = "insert into tb_usuario (dataCadastro, nome_usuario, login_usuario, senha_usuario, email_usuario, cpf_usuario, status_usuario)" + 
-                                    "values (@dataCadastro, @nome_usuario, @login_usuario, @senha_usuario, @email_usuario, @cpf_usuario, @status_usuario)";
+                cmd.CommandText = "insert into tb_usuario ([datacadastro_usuario], [nome_usuario], [login_usuario], [senha_usuario], [email_usuario], [cpf_usuario], [status_usuario])" + 
+                                    "values (@datacadastro_usuario, @nome_usuario, @login_usuario, @senha_usuario, @email_usuario, @cpf_usuario, @status_usuario)";
 
-                cmd.Parameters.Add("dataCadastro", SqlDbType.DateTime).Value = objUsuarioDTO.DataCadastro;
+                cmd.Parameters.Add("datacadastro_usuario", SqlDbType.DateTime).Value = objUsuarioDTO.DataCadastro;
                 cmd.Parameters.Add("nome_usuario", SqlDbType.VarChar).Value = objUsuarioDTO.Nome;
                 cmd.Parameters.Add("login_usuario", SqlDbType.VarChar).Value = objUsuarioDTO.Login;
                 cmd.Parameters.Add("senha_usuario", SqlDbType.VarChar).Value = objUsuarioDTO.Senha;

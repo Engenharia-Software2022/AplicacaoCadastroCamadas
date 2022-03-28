@@ -53,8 +53,8 @@ namespace AplicacaoCadastroCamadas
                         objUsuarioDTO.Login = txbLogin.Text;
                         objUsuarioDTO.Senha = txbSenha.Text;
                         objUsuarioDTO.Email = txbEmail.Text;
-                        objUsuarioDTO.Email = mtbCpf.Text;
-                        objUsuarioDTO.Email = txbEmail.Text;
+                        objUsuarioDTO.Cpf = mtbCpf.Text;
+                       
 
                         if (rbAtivo.Checked)
                         {
