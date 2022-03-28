@@ -53,7 +53,7 @@
             this.btnEntrar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEntrar.ForeColor = System.Drawing.Color.White;
             this.btnEntrar.HoverState.Parent = this.btnEntrar;
-            this.btnEntrar.Location = new System.Drawing.Point(40, 309);
+            this.btnEntrar.Location = new System.Drawing.Point(40, 311);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.ShadowDecoration.Parent = this.btnEntrar;
             this.btnEntrar.Size = new System.Drawing.Size(180, 40);
@@ -107,7 +107,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::AplicacaoCadastroCamadas.Properties.Resources.Login;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(49, 25);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(49, 27);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(163, 127);
