@@ -170,7 +170,7 @@
             this.dgvCadastro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCadastro.Location = new System.Drawing.Point(9, 265);
             this.dgvCadastro.Name = "dgvCadastro";
-            this.dgvCadastro.Size = new System.Drawing.Size(689, 186);
+            this.dgvCadastro.Size = new System.Drawing.Size(653, 186);
             this.dgvCadastro.TabIndex = 1;
             // 
             // groupBox1
