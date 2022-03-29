@@ -46,5 +46,50 @@ namespace AplicacaoCadastroCamadas.DAO
                
             }
         }
+
+        public IList<UsuarioDTO> CargaUsuario()
+        {
+            using (SqlConnection con = new SqlConnection()) 
+            {
+                con.ConnectionString = Properties.Settings.Default.ConexaoBanco;
+                SqlCommand com = new SqlCommand();
+                com.CommandType = CommandType.Text;
+                com.CommandText = "select * from tb_usuario";
+
+                com.Connection = con;
+
+                SqlDataReader dr;
+
+                IList<UsuarioDTO> listaUsuarioDto = new List<UsuarioDTO>();
+                con.Open();
+
+                dr = com.ExecuteReader();
+
+                if (dr.HasRows) 
+                {
+                    while (dr.Read()) 
+                    {
+                        UsuarioDTO usuario = new UsuarioDTO();
+
+                        usuario.Codigo = Convert.ToInt32(dr["codigo_usuario"]);
+                        usuario.DataCadastro = Convert.ToDateTime(dr["datacadastro_usuario"]);
+                        usuario.Nome = Convert.ToString(dr["nome_usuario"]);
+                        usuario.Login = Convert.ToString(dr["login_usuario"]);
+                        usuario.Senha = Convert.ToString(dr["senha_usuario"]);
+                        usuario.Email = Convert.ToString(dr["email_usuario"]);
+                        usuario.Cpf = Convert.ToString(dr["cpf_usuario"]);
+                        usuario.Status_usuario = Convert.ToChar(dr["status_usuario"]);
+
+                        listaUsuarioDto.Add(usuario);
+                    }
+                }
+
+                return listaUsuarioDto;
+
+
+
+
+            }
+        }
     }
 }

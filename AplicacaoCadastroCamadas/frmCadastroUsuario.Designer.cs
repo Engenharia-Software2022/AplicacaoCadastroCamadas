@@ -60,6 +60,14 @@
             this.rbAtivo = new Guna.UI2.WinForms.Guna2RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.codigo_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.login_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.senha_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpf_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datacadastro_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExcluir)).BeginInit();
@@ -167,10 +175,22 @@
             // 
             // dgvCadastro
             // 
+            this.dgvCadastro.AllowUserToAddRows = false;
+            this.dgvCadastro.AllowUserToDeleteRows = false;
             this.dgvCadastro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCadastro.Location = new System.Drawing.Point(9, 265);
+            this.dgvCadastro.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.codigo_usuario,
+            this.nome_usuario,
+            this.login_usuario,
+            this.senha_usuario,
+            this.email_usuario,
+            this.cpf_usuario,
+            this.status_usuario,
+            this.datacadastro_usuario});
+            this.dgvCadastro.Location = new System.Drawing.Point(9, 268);
             this.dgvCadastro.Name = "dgvCadastro";
-            this.dgvCadastro.Size = new System.Drawing.Size(653, 186);
+            this.dgvCadastro.ReadOnly = true;
+            this.dgvCadastro.Size = new System.Drawing.Size(737, 186);
             this.dgvCadastro.TabIndex = 1;
             // 
             // groupBox1
@@ -435,6 +455,74 @@
             this.label1.TabIndex = 47;
             this.label1.Text = "Código:";
             // 
+            // codigo_usuario
+            // 
+            this.codigo_usuario.DataPropertyName = "Codigo";
+            this.codigo_usuario.HeaderText = "Código";
+            this.codigo_usuario.Name = "codigo_usuario";
+            this.codigo_usuario.ReadOnly = true;
+            this.codigo_usuario.Width = 50;
+            // 
+            // nome_usuario
+            // 
+            this.nome_usuario.DataPropertyName = "Nome";
+            this.nome_usuario.HeaderText = "Nome";
+            this.nome_usuario.Name = "nome_usuario";
+            this.nome_usuario.ReadOnly = true;
+            this.nome_usuario.Width = 300;
+            // 
+            // login_usuario
+            // 
+            this.login_usuario.DataPropertyName = "Login";
+            this.login_usuario.HeaderText = "Login";
+            this.login_usuario.Name = "login_usuario";
+            this.login_usuario.ReadOnly = true;
+            this.login_usuario.Width = 130;
+            // 
+            // senha_usuario
+            // 
+            this.senha_usuario.DataPropertyName = "Senha";
+            this.senha_usuario.HeaderText = "Senha";
+            this.senha_usuario.Name = "senha_usuario";
+            this.senha_usuario.ReadOnly = true;
+            this.senha_usuario.Visible = false;
+            this.senha_usuario.Width = 50;
+            // 
+            // email_usuario
+            // 
+            this.email_usuario.DataPropertyName = "Email";
+            this.email_usuario.HeaderText = "Email";
+            this.email_usuario.Name = "email_usuario";
+            this.email_usuario.ReadOnly = true;
+            this.email_usuario.Visible = false;
+            this.email_usuario.Width = 150;
+            // 
+            // cpf_usuario
+            // 
+            this.cpf_usuario.DataPropertyName = "Cpf";
+            this.cpf_usuario.HeaderText = "CPF";
+            this.cpf_usuario.Name = "cpf_usuario";
+            this.cpf_usuario.ReadOnly = true;
+            this.cpf_usuario.Visible = false;
+            this.cpf_usuario.Width = 30;
+            // 
+            // status_usuario
+            // 
+            this.status_usuario.DataPropertyName = "Status";
+            this.status_usuario.HeaderText = "STATUS";
+            this.status_usuario.Name = "status_usuario";
+            this.status_usuario.ReadOnly = true;
+            this.status_usuario.Visible = false;
+            this.status_usuario.Width = 20;
+            // 
+            // datacadastro_usuario
+            // 
+            this.datacadastro_usuario.DataPropertyName = "DataCadastro";
+            this.datacadastro_usuario.HeaderText = "Data Cadastro";
+            this.datacadastro_usuario.Name = "datacadastro_usuario";
+            this.datacadastro_usuario.ReadOnly = true;
+            this.datacadastro_usuario.Width = 200;
+            // 
             // frmCadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -499,5 +587,13 @@
         private Guna.UI2.WinForms.Guna2RadioButton rbAtivo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codigo_usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome_usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn login_usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn senha_usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email_usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cpf_usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status_usuario;
+        private System.Windows.Forms.DataGridViewTextBoxColumn datacadastro_usuario;
     }
 }

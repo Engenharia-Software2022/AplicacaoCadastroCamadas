@@ -14,5 +14,10 @@ namespace AplicacaoCadastroCamadas.Model
         {
             return new UsuarioDAO().IncluirUsuario(objUsuarioDTO);
         }
+
+        public IList<UsuarioDTO> CargaUsuario()
+        {
+            return new UsuarioDAO().CargaUsuario();
+        }
     }
 }

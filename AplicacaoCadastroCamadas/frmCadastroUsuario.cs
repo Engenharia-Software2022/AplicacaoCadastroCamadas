@@ -21,7 +21,7 @@ namespace AplicacaoCadastroCamadas
 
         private void frmCadastroUsuario_Load(object sender, EventArgs e)
         {
-
+            CarregaGrid();
         }
 
         UsuarioDTO objUsuarioDTO = new UsuarioDTO();
@@ -138,6 +138,29 @@ namespace AplicacaoCadastroCamadas
             mtbCpf.Enabled = false;
             gbStatus.Enabled= false;
         }
+
+        private void CarregaGrid() 
+        {
+            try
+            {
+                IList<UsuarioDTO> listaUsuario = new List<UsuarioDTO>();
+
+                listaUsuario = new UsuarioModel().CargaUsuario();
+
+                dgvCadastro.AutoGenerateColumns = false;
+                dgvCadastro.DataSource = listaUsuario;
+ 
+               
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro ao carregar dados do Usuário!" + ex.Message);
+            }
+
+        }
+
 
        
     }       
