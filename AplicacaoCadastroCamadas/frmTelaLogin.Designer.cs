@@ -107,10 +107,10 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::AplicacaoCadastroCamadas.Properties.Resources.Login;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(49, 27);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(52, 27);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(163, 127);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(147, 114);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 9;
             this.guna2PictureBox1.TabStop = false;
