@@ -53,7 +53,7 @@
             this.btnEntrar.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEntrar.ForeColor = System.Drawing.Color.White;
             this.btnEntrar.HoverState.Parent = this.btnEntrar;
-            this.btnEntrar.Location = new System.Drawing.Point(40, 307);
+            this.btnEntrar.Location = new System.Drawing.Point(40, 314);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.ShadowDecoration.Parent = this.btnEntrar;
             this.btnEntrar.Size = new System.Drawing.Size(180, 40);
