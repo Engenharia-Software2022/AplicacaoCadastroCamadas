@@ -98,7 +98,7 @@
             // btnSair
             // 
             this.btnSair.Image = global::AplicacaoCadastroCamadas.Properties.Resources.icons8_exit_64;
-            this.btnSair.Location = new System.Drawing.Point(373, 7);
+            this.btnSair.Location = new System.Drawing.Point(372, 7);
             this.btnSair.Name = "btnSair";
             this.btnSair.ShadowDecoration.Parent = this.btnSair;
             this.btnSair.Size = new System.Drawing.Size(40, 40);
@@ -190,7 +190,7 @@
             this.dgvCadastro.Location = new System.Drawing.Point(9, 268);
             this.dgvCadastro.Name = "dgvCadastro";
             this.dgvCadastro.ReadOnly = true;
-            this.dgvCadastro.Size = new System.Drawing.Size(737, 186);
+            this.dgvCadastro.Size = new System.Drawing.Size(726, 186);
             this.dgvCadastro.TabIndex = 1;
             // 
             // groupBox1
