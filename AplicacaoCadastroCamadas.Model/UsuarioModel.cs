@@ -19,5 +19,10 @@ namespace AplicacaoCadastroCamadas.Model
         {
             return new UsuarioDAO().CargaUsuario();
         }
+
+        public UsuarioDTO AutenticacaoUsuario()
+        {
+            return new UsuarioModel().AutenticacaoUsuario();
+        }
     }
 }

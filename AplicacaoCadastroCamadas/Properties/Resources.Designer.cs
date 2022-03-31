@@ -73,6 +73,26 @@ namespace AplicacaoCadastroCamadas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blue_background_images_downloading {
+            get {
+                object obj = ResourceManager.GetObject("blue-background-images-downloading", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap blue_background_images_downloading1 {
+            get {
+                object obj = ResourceManager.GetObject("blue-background-images-downloading1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_adicionar_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-adicionar-48", resourceCulture);
@@ -123,6 +143,26 @@ namespace AplicacaoCadastroCamadas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_lock_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-lock-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_lock_50__1_ {
+            get {
+                object obj = ResourceManager.GetObject("icons8-lock-50 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_salvar_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-salvar-50", resourceCulture);
@@ -133,9 +173,39 @@ namespace AplicacaoCadastroCamadas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_user_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-user-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_user_male_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-user-male-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap james_lee_0YQz7M2fcYY_unsplash {
             get {
                 object obj = ResourceManager.GetObject("james-lee-0YQz7M2fcYY-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap james_lee_0YQz7M2fcYY_unsplash1 {
+            get {
+                object obj = ResourceManager.GetObject("james-lee-0YQz7M2fcYY-unsplash1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +226,16 @@ namespace AplicacaoCadastroCamadas.Properties {
         internal static System.Drawing.Bitmap teemu_paananen_OOE4xAnBhKo_unsplash {
             get {
                 object obj = ResourceManager.GetObject("teemu-paananen-OOE4xAnBhKo-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teemu_paananen_OOE4xAnBhKo_unsplash1 {
+            get {
+                object obj = ResourceManager.GetObject("teemu-paananen-OOE4xAnBhKo-unsplash1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

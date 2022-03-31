@@ -29,53 +29,157 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.btnEntrar = new Guna.UI2.WinForms.Guna2Button();
-            this.txbUsuario = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.label3 = new System.Windows.Forms.Label();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.cbFechar = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            this.cbMinimizar = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.txbSenha = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txbUsuario = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(43, 429);
+            this.label1.Location = new System.Drawing.Point(58, 413);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "Não tem conta? ";
             // 
-            // btnEntrar
+            // label4
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnEntrar.BorderRadius = 20;
-            this.btnEntrar.CheckedState.Parent = this.btnEntrar;
-            this.btnEntrar.CustomImages.Parent = this.btnEntrar;
-            this.btnEntrar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnEntrar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnEntrar.ForeColor = System.Drawing.Color.White;
-            this.btnEntrar.HoverState.Parent = this.btnEntrar;
-            this.btnEntrar.Location = new System.Drawing.Point(51, 273);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.ShadowDecoration.Parent = this.btnEntrar;
-            this.btnEntrar.Size = new System.Drawing.Size(160, 40);
-            this.btnEntrar.TabIndex = 6;
-            this.btnEntrar.Text = "ENTRAR";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(158, 413);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 16);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Inscrever-se";
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.cbMinimizar);
+            this.guna2Panel1.Controls.Add(this.cbFechar);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(306, 41);
+            this.guna2Panel1.TabIndex = 21;
+            // 
+            // cbFechar
+            // 
+            this.cbFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbFechar.BackColor = System.Drawing.Color.White;
+            this.cbFechar.BorderColor = System.Drawing.Color.DimGray;
+            this.cbFechar.FillColor = System.Drawing.Color.White;
+            this.cbFechar.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.cbFechar.HoverState.FillColor = System.Drawing.Color.Teal;
+            this.cbFechar.HoverState.IconColor = System.Drawing.Color.White;
+            this.cbFechar.HoverState.Parent = this.cbFechar;
+            this.cbFechar.IconColor = System.Drawing.Color.DimGray;
+            this.cbFechar.Location = new System.Drawing.Point(258, 6);
+            this.cbFechar.Name = "cbFechar";
+            this.cbFechar.PressedColor = System.Drawing.Color.White;
+            this.cbFechar.ShadowDecoration.Color = System.Drawing.Color.White;
+            this.cbFechar.ShadowDecoration.Parent = this.cbFechar;
+            this.cbFechar.Size = new System.Drawing.Size(45, 29);
+            this.cbFechar.TabIndex = 22;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Controls.Add(this.label3);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 41);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(306, 112);
+            this.guna2Panel2.TabIndex = 22;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(106, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(101, 39);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "Login";
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BorderRadius = 20;
+            this.btnLogin.CheckedState.Parent = this.btnLogin;
+            this.btnLogin.CustomImages.Parent = this.btnLogin;
+            this.btnLogin.FillColor = System.Drawing.Color.Teal;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.HoverState.Parent = this.btnLogin;
+            this.btnLogin.Location = new System.Drawing.Point(61, 335);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
+            this.btnLogin.Size = new System.Drawing.Size(180, 45);
+            this.btnLogin.TabIndex = 24;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+            // 
+            // cbMinimizar
+            // 
+            this.cbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbMinimizar.BackColor = System.Drawing.Color.White;
+            this.cbMinimizar.BorderColor = System.Drawing.Color.DimGray;
+            this.cbMinimizar.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.cbMinimizar.FillColor = System.Drawing.Color.White;
+            this.cbMinimizar.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.cbMinimizar.HoverState.FillColor = System.Drawing.Color.Teal;
+            this.cbMinimizar.HoverState.IconColor = System.Drawing.Color.White;
+            this.cbMinimizar.HoverState.Parent = this.cbMinimizar;
+            this.cbMinimizar.IconColor = System.Drawing.Color.DimGray;
+            this.cbMinimizar.Location = new System.Drawing.Point(207, 6);
+            this.cbMinimizar.Name = "cbMinimizar";
+            this.cbMinimizar.PressedColor = System.Drawing.Color.White;
+            this.cbMinimizar.ShadowDecoration.Color = System.Drawing.Color.White;
+            this.cbMinimizar.ShadowDecoration.Parent = this.cbMinimizar;
+            this.cbMinimizar.Size = new System.Drawing.Size(45, 29);
+            this.cbMinimizar.TabIndex = 23;
+            // 
+            // txbSenha
+            // 
+            this.txbSenha.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txbSenha.BorderColor = System.Drawing.Color.Teal;
+            this.txbSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbSenha.DefaultText = "";
+            this.txbSenha.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txbSenha.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txbSenha.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSenha.DisabledState.Parent = this.txbSenha;
+            this.txbSenha.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txbSenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSenha.FocusedState.Parent = this.txbSenha;
+            this.txbSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txbSenha.HoverState.Parent = this.txbSenha;
+            this.txbSenha.IconLeft = global::AplicacaoCadastroCamadas.Properties.Resources.icons8_lock_50__1_;
+            this.txbSenha.IconLeftSize = new System.Drawing.Size(30, 30);
+            this.txbSenha.Location = new System.Drawing.Point(32, 256);
+            this.txbSenha.Name = "txbSenha";
+            this.txbSenha.PasswordChar = '*';
+            this.txbSenha.PlaceholderText = "   Digite sua senha";
+            this.txbSenha.SelectedText = "";
+            this.txbSenha.ShadowDecoration.Parent = this.txbSenha;
+            this.txbSenha.Size = new System.Drawing.Size(237, 36);
+            this.txbSenha.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txbSenha.TabIndex = 23;
             // 
             // txbUsuario
             // 
             this.txbUsuario.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txbUsuario.BorderRadius = 10;
+            this.txbUsuario.BorderColor = System.Drawing.Color.Teal;
             this.txbUsuario.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txbUsuario.DefaultText = "";
             this.txbUsuario.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -87,174 +191,40 @@
             this.txbUsuario.FocusedState.Parent = this.txbUsuario;
             this.txbUsuario.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txbUsuario.HoverState.Parent = this.txbUsuario;
-            this.txbUsuario.Location = new System.Drawing.Point(51, 161);
+            this.txbUsuario.IconLeft = global::AplicacaoCadastroCamadas.Properties.Resources.icons8_user_50;
+            this.txbUsuario.IconLeftSize = new System.Drawing.Size(35, 35);
+            this.txbUsuario.Location = new System.Drawing.Point(32, 186);
             this.txbUsuario.Name = "txbUsuario";
             this.txbUsuario.PasswordChar = '\0';
-            this.txbUsuario.PlaceholderText = "          Digite seu usuário";
+            this.txbUsuario.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txbUsuario.PlaceholderText = "   Digite seu usuario";
             this.txbUsuario.SelectedText = "";
             this.txbUsuario.ShadowDecoration.Parent = this.txbUsuario;
-            this.txbUsuario.Size = new System.Drawing.Size(170, 36);
+            this.txbUsuario.Size = new System.Drawing.Size(237, 36);
+            this.txbUsuario.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txbUsuario.TabIndex = 8;
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = global::AplicacaoCadastroCamadas.Properties.Resources.james_lee_0YQz7M2fcYY_unsplash;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(-32, -92);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(340, 416);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 11;
-            this.guna2CirclePictureBox1.TabStop = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BorderRadius = 20;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(17, 136);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(243, 277);
-            this.guna2PictureBox1.TabIndex = 12;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2TextBox1
-            // 
-            this.guna2TextBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2TextBox1.BorderRadius = 10;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(51, 204);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "          Digite sua senha";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(170, 36);
-            this.guna2TextBox1.TabIndex = 13;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label2.Location = new System.Drawing.Point(69, 252);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 16);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Esqueceu a senha?";
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.Location = new System.Drawing.Point(44, 328);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(180, 12);
-            this.guna2Separator1.TabIndex = 15;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(109, 326);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 16);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "OU";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button2.BorderRadius = 20;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(35, 352);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(104, 40);
-            this.guna2Button2.TabIndex = 18;
-            this.guna2Button2.Text = "Facebook";
-            // 
-            // guna2Button3
-            // 
-            this.guna2Button3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.guna2Button3.BorderRadius = 20;
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.FillColor = System.Drawing.Color.Red;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(142, 354);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(104, 40);
-            this.guna2Button3.TabIndex = 19;
-            this.guna2Button3.Text = "Google";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(144, 429);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 16);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Inscrever-se";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(46, 65);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 25);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Cadastro Simples";
             // 
             // frmTelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(280, 471);
-            this.Controls.Add(this.label5);
+            this.ClientSize = new System.Drawing.Size(306, 471);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.txbSenha);
+            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.guna2Button3);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.guna2Separator1);
-            this.Controls.Add(this.btnEntrar);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.txbUsuario);
-            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2CirclePictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmTelaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmTelaLogin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel2.ResumeLayout(false);
+            this.guna2Panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,18 +233,15 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button btnEntrar;
         private Guna.UI2.WinForms.Guna2TextBox txbUsuario;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2ControlBox cbFechar;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2TextBox txbSenha;
+        private Guna.UI2.WinForms.Guna2Button btnLogin;
+        private Guna.UI2.WinForms.Guna2ControlBox cbMinimizar;
     }
 }
 

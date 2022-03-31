@@ -37,6 +37,14 @@
             this.btnAdicionar = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvCadastro = new System.Windows.Forms.DataGridView();
+            this.codigo_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.login_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.senha_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cpf_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.datacadastro_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txbPesquisaUsuario = new System.Windows.Forms.TextBox();
             this.txbEmail = new System.Windows.Forms.TextBox();
@@ -60,14 +68,6 @@
             this.rbAtivo = new Guna.UI2.WinForms.Guna2RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.codigo_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.login_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.senha_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cpf_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.datacadastro_usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExcluir)).BeginInit();
@@ -89,16 +89,17 @@
             this.guna2Panel1.Controls.Add(this.btnCancelar);
             this.guna2Panel1.Controls.Add(this.btnSalvar);
             this.guna2Panel1.Controls.Add(this.btnAdicionar);
-            this.guna2Panel1.Location = new System.Drawing.Point(3, 2);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(749, 57);
+            this.guna2Panel1.Size = new System.Drawing.Size(770, 57);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnSair
             // 
             this.btnSair.Image = global::AplicacaoCadastroCamadas.Properties.Resources.icons8_exit_64;
-            this.btnSair.Location = new System.Drawing.Point(372, 7);
+            this.btnSair.Location = new System.Drawing.Point(269, 7);
             this.btnSair.Name = "btnSair";
             this.btnSair.ShadowDecoration.Parent = this.btnSair;
             this.btnSair.Size = new System.Drawing.Size(40, 40);
@@ -109,7 +110,7 @@
             // btnExcluir
             // 
             this.btnExcluir.Image = global::AplicacaoCadastroCamadas.Properties.Resources.icons8_close_64;
-            this.btnExcluir.Location = new System.Drawing.Point(302, 7);
+            this.btnExcluir.Location = new System.Drawing.Point(221, 7);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.ShadowDecoration.Parent = this.btnExcluir;
             this.btnExcluir.Size = new System.Drawing.Size(40, 40);
@@ -120,7 +121,7 @@
             // btnEditar
             // 
             this.btnEditar.Image = global::AplicacaoCadastroCamadas.Properties.Resources.icons8_edit_text_file_48;
-            this.btnEditar.Location = new System.Drawing.Point(234, 7);
+            this.btnEditar.Location = new System.Drawing.Point(174, 7);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.ShadowDecoration.Parent = this.btnEditar;
             this.btnEditar.Size = new System.Drawing.Size(40, 40);
@@ -131,7 +132,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Image = global::AplicacaoCadastroCamadas.Properties.Resources.icons8_desligar_48;
-            this.btnCancelar.Location = new System.Drawing.Point(161, 7);
+            this.btnCancelar.Location = new System.Drawing.Point(124, 7);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.ShadowDecoration.Parent = this.btnCancelar;
             this.btnCancelar.Size = new System.Drawing.Size(40, 40);
@@ -142,7 +143,7 @@
             // btnSalvar
             // 
             this.btnSalvar.Image = global::AplicacaoCadastroCamadas.Properties.Resources.icons8_salvar_50;
-            this.btnSalvar.Location = new System.Drawing.Point(88, 7);
+            this.btnSalvar.Location = new System.Drawing.Point(73, 7);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.ShadowDecoration.Parent = this.btnSalvar;
             this.btnSalvar.Size = new System.Drawing.Size(40, 40);
@@ -167,10 +168,11 @@
             // 
             this.guna2Panel2.Controls.Add(this.dgvCadastro);
             this.guna2Panel2.Controls.Add(this.groupBox1);
-            this.guna2Panel2.Location = new System.Drawing.Point(3, 60);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 57);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(749, 480);
+            this.guna2Panel2.Size = new System.Drawing.Size(770, 480);
             this.guna2Panel2.TabIndex = 1;
             // 
             // dgvCadastro
@@ -192,6 +194,74 @@
             this.dgvCadastro.ReadOnly = true;
             this.dgvCadastro.Size = new System.Drawing.Size(726, 186);
             this.dgvCadastro.TabIndex = 1;
+            // 
+            // codigo_usuario
+            // 
+            this.codigo_usuario.DataPropertyName = "Codigo";
+            this.codigo_usuario.HeaderText = "Código";
+            this.codigo_usuario.Name = "codigo_usuario";
+            this.codigo_usuario.ReadOnly = true;
+            this.codigo_usuario.Width = 50;
+            // 
+            // nome_usuario
+            // 
+            this.nome_usuario.DataPropertyName = "Nome";
+            this.nome_usuario.HeaderText = "Nome";
+            this.nome_usuario.Name = "nome_usuario";
+            this.nome_usuario.ReadOnly = true;
+            this.nome_usuario.Width = 300;
+            // 
+            // login_usuario
+            // 
+            this.login_usuario.DataPropertyName = "Login";
+            this.login_usuario.HeaderText = "Login";
+            this.login_usuario.Name = "login_usuario";
+            this.login_usuario.ReadOnly = true;
+            this.login_usuario.Width = 130;
+            // 
+            // senha_usuario
+            // 
+            this.senha_usuario.DataPropertyName = "Senha";
+            this.senha_usuario.HeaderText = "Senha";
+            this.senha_usuario.Name = "senha_usuario";
+            this.senha_usuario.ReadOnly = true;
+            this.senha_usuario.Visible = false;
+            this.senha_usuario.Width = 50;
+            // 
+            // email_usuario
+            // 
+            this.email_usuario.DataPropertyName = "Email";
+            this.email_usuario.HeaderText = "Email";
+            this.email_usuario.Name = "email_usuario";
+            this.email_usuario.ReadOnly = true;
+            this.email_usuario.Visible = false;
+            this.email_usuario.Width = 150;
+            // 
+            // cpf_usuario
+            // 
+            this.cpf_usuario.DataPropertyName = "Cpf";
+            this.cpf_usuario.HeaderText = "CPF";
+            this.cpf_usuario.Name = "cpf_usuario";
+            this.cpf_usuario.ReadOnly = true;
+            this.cpf_usuario.Visible = false;
+            this.cpf_usuario.Width = 30;
+            // 
+            // status_usuario
+            // 
+            this.status_usuario.DataPropertyName = "Status";
+            this.status_usuario.HeaderText = "STATUS";
+            this.status_usuario.Name = "status_usuario";
+            this.status_usuario.ReadOnly = true;
+            this.status_usuario.Visible = false;
+            this.status_usuario.Width = 20;
+            // 
+            // datacadastro_usuario
+            // 
+            this.datacadastro_usuario.DataPropertyName = "DataCadastro";
+            this.datacadastro_usuario.HeaderText = "Data Cadastro";
+            this.datacadastro_usuario.Name = "datacadastro_usuario";
+            this.datacadastro_usuario.ReadOnly = true;
+            this.datacadastro_usuario.Width = 200;
             // 
             // groupBox1
             // 
@@ -454,74 +524,6 @@
             this.label1.Size = new System.Drawing.Size(54, 16);
             this.label1.TabIndex = 47;
             this.label1.Text = "Código:";
-            // 
-            // codigo_usuario
-            // 
-            this.codigo_usuario.DataPropertyName = "Codigo";
-            this.codigo_usuario.HeaderText = "Código";
-            this.codigo_usuario.Name = "codigo_usuario";
-            this.codigo_usuario.ReadOnly = true;
-            this.codigo_usuario.Width = 50;
-            // 
-            // nome_usuario
-            // 
-            this.nome_usuario.DataPropertyName = "Nome";
-            this.nome_usuario.HeaderText = "Nome";
-            this.nome_usuario.Name = "nome_usuario";
-            this.nome_usuario.ReadOnly = true;
-            this.nome_usuario.Width = 300;
-            // 
-            // login_usuario
-            // 
-            this.login_usuario.DataPropertyName = "Login";
-            this.login_usuario.HeaderText = "Login";
-            this.login_usuario.Name = "login_usuario";
-            this.login_usuario.ReadOnly = true;
-            this.login_usuario.Width = 130;
-            // 
-            // senha_usuario
-            // 
-            this.senha_usuario.DataPropertyName = "Senha";
-            this.senha_usuario.HeaderText = "Senha";
-            this.senha_usuario.Name = "senha_usuario";
-            this.senha_usuario.ReadOnly = true;
-            this.senha_usuario.Visible = false;
-            this.senha_usuario.Width = 50;
-            // 
-            // email_usuario
-            // 
-            this.email_usuario.DataPropertyName = "Email";
-            this.email_usuario.HeaderText = "Email";
-            this.email_usuario.Name = "email_usuario";
-            this.email_usuario.ReadOnly = true;
-            this.email_usuario.Visible = false;
-            this.email_usuario.Width = 150;
-            // 
-            // cpf_usuario
-            // 
-            this.cpf_usuario.DataPropertyName = "Cpf";
-            this.cpf_usuario.HeaderText = "CPF";
-            this.cpf_usuario.Name = "cpf_usuario";
-            this.cpf_usuario.ReadOnly = true;
-            this.cpf_usuario.Visible = false;
-            this.cpf_usuario.Width = 30;
-            // 
-            // status_usuario
-            // 
-            this.status_usuario.DataPropertyName = "Status";
-            this.status_usuario.HeaderText = "STATUS";
-            this.status_usuario.Name = "status_usuario";
-            this.status_usuario.ReadOnly = true;
-            this.status_usuario.Visible = false;
-            this.status_usuario.Width = 20;
-            // 
-            // datacadastro_usuario
-            // 
-            this.datacadastro_usuario.DataPropertyName = "DataCadastro";
-            this.datacadastro_usuario.HeaderText = "Data Cadastro";
-            this.datacadastro_usuario.Name = "datacadastro_usuario";
-            this.datacadastro_usuario.ReadOnly = true;
-            this.datacadastro_usuario.Width = 200;
             // 
             // frmCadastroUsuario
             // 

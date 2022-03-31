@@ -26,5 +26,7 @@ namespace AplicacaoCadastroCamadas.Properties
                 return defaultInstance;
             }
         }
+
+        public string ConexaoBanco { get; internal set; }
     }
 }
