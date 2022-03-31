@@ -18,6 +18,7 @@ namespace AplicacaoCadastroCamadas
 {
     public partial class frmTelaLogin : Form
     {
+        SqlConnection Conexao = new SqlConnection(@"Data Source=DESKTOP-MKQEMBT\SQLEXPRESS;Initial Catalog=banco_cadastro;Integrated Security=True");
         public frmTelaLogin()
         {
             InitializeComponent();
@@ -31,48 +32,36 @@ namespace AplicacaoCadastroCamadas
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            ConsultarUsuarioLogin();
-            //InicializarModo();
-        }
-
-
-        private void ConsultarUsuarioLogin()
-        {
-
-
-            using (SqlConnection con = new SqlConnection())
+            try
             {
+                    Conexao.Open();
+                    string query = "select * from tb_usuario where login_usuario = '" + txbUsuario.Text + "' And senha_usuario = '" + txbSenha.Text + "'";
+                    SqlDataAdapter ada = new SqlDataAdapter(query, Conexao);
+                    DataTable dt = new DataTable();
+                    ada.Fill(dt);
 
-
-                con.ConnectionString = Properties.Settings.Default.ConexaoBanco;
-                con.Open();
-
-                string query = "select * from tb_usuario where login_usuario = '" + txbUsuario.Text + "' And senha_usuario = '" + txbSenha.Text + "'";
-                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
-
-                if (dt.Rows.Count == 1)
+                if (dt.Rows.Count >= 1)
                 {
                     frmCadastroUsuario frm = new frmCadastroUsuario();
                     this.Hide();
                     frm.Show();
-                    con.Close();
+                    Conexao.Close();
                 }
-                else
+                else 
                 {
-                    MessageBox.Show("Usuario ou Senha Inválido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Usuario ou Senha Inválida", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-
-
-
-
-
-
-
-
 
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro ao conectar." + ex.Message);
+            }
+            
         }
+
+
+       
     }
 }
