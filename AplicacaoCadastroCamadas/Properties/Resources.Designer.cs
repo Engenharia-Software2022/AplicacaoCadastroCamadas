@@ -63,6 +63,16 @@ namespace AplicacaoCadastroCamadas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Apps_preferences_desktop_user_password_icon {
+            get {
+                object obj = ResourceManager.GetObject("Apps-preferences-desktop-user-password-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_adicionar_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-adicionar-48", resourceCulture);
@@ -123,9 +133,39 @@ namespace AplicacaoCadastroCamadas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap james_lee_0YQz7M2fcYY_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("james-lee-0YQz7M2fcYY-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login {
             get {
                 object obj = ResourceManager.GetObject("Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap teemu_paananen_OOE4xAnBhKo_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("teemu-paananen-OOE4xAnBhKo-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap users_icon {
+            get {
+                object obj = ResourceManager.GetObject("users-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
