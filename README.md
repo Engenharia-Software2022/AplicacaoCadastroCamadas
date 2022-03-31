@@ -44,15 +44,15 @@ Para utilizar o sistema de cadastro o usuário deverá:
 ***
 ### Tela de Login do Sistema
 
-![LOGIN](https://github.com/felipebacelo/Sistema_Cadastro/blob/master/IMAGENS/LOGIN.png)
+![LOGIN](https://github.com/felipebacelo/Sistema_Cadastro/blob)
 
-![CADASTRAR](https://github.com/felipebacelo/Sistema_Cadastro/blob/master/IMAGENS/CADASTRAR.png)
+![CADASTRAR](https://github.com/felipebacelo/Sistema_Cadastro/blob/master)
 
-![CONSULTAR](https://github.com/felipebacelo/Sistema_Cadastro/blob/master/IMAGENS/CONSULTAR.png)
+![CONSULTAR](https://github.com/felipebacelo/Sistema_Cadastro/blob/master)
 
-![SENHAS](https://github.com/felipebacelo/Sistema_Cadastro/blob/master/IMAGENS/SENHAS.png)
+![SENHAS](https://github.com/felipebacelo/Sistema_Cadastro/blob/master)
 
-![USUÁRIOS](https://github.com/felipebacelo/Sistema_Cadastro/blob/master/IMAGENS/USU%C3%81RIOS.png)
+![USUÁRIOS](https://github.com/felipebacelo/Sistema_Cadastro/blob/master/)
 
 ***
 ### Exemplos de Códigos Utilizados
