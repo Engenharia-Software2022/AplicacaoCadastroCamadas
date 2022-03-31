@@ -44,15 +44,11 @@ Para utilizar o sistema de cadastro o usuário deverá:
 ***
 ### Tela de Login do Sistema
 
-![LOGIN](https://github.com/felipebacelo/Sistema_Cadastro/blob)
+![Tela de Login](https://github.com/Engenharia-Software2022/AplicacaoCadastroCamadas/blob/master/Tela%20de%20Login%20do%20Sistema.PNG)
 
-![CADASTRAR](https://github.com/felipebacelo/Sistema_Cadastro/blob/master)
+![Tela de Cadastro](https://github.com/Engenharia-Software2022/AplicacaoCadastroCamadas/blob/master/Tela%20de%20Cadastro%20do%20Sistema.PNG)
 
-![CONSULTAR](https://github.com/felipebacelo/Sistema_Cadastro/blob/master)
 
-![SENHAS](https://github.com/felipebacelo/Sistema_Cadastro/blob/master)
-
-![USUÁRIOS](https://github.com/felipebacelo/Sistema_Cadastro/blob/master/)
 
 ***
 ### Exemplos de Códigos Utilizados
