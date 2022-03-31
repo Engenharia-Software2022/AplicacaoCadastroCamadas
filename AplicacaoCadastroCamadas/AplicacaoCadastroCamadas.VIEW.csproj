@@ -95,6 +95,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AplicacaoCadastroCamadas.DAO\AplicacaoCadastroCamadas.DAO.csproj">
+      <Project>{cd1d8202-5d89-418d-b6f3-a071d599a13f}</Project>
+      <Name>AplicacaoCadastroCamadas.DAO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\AplicacaoCadastroCamadas.DTO\AplicacaoCadastroCamadas.DTO.csproj">
       <Project>{e26cc1dd-f769-43fc-9d55-c9711338e2a8}</Project>
       <Name>AplicacaoCadastroCamadas.DTO</Name>

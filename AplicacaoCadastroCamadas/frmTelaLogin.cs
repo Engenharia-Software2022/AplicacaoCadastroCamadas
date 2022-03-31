@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AplicacaoCadastroCamadas.DTO;
 using AplicacaoCadastroCamadas.Model;
+using AplicacaoCadastroCamadas.DAO;
+
 
 
 namespace AplicacaoCadastroCamadas
@@ -29,43 +31,48 @@ namespace AplicacaoCadastroCamadas
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            try
+            ConsultarUsuarioLogin();
+            //InicializarModo();
+        }
+
+
+        private void ConsultarUsuarioLogin()
+        {
+
+
+            using (SqlConnection con = new SqlConnection())
             {
-                UsuarioDTO objUsuario = new UsuarioDTO();
 
-                objUsuario = new UsuarioModel().AutenticacaoUsuario();
 
-                using (SqlConnection con = new SqlConnection())
+                con.ConnectionString = Properties.Settings.Default.ConexaoBanco;
+                con.Open();
+
+                string query = "select * from tb_usuario where login_usuario = '" + txbUsuario.Text + "' And senha_usuario = '" + txbSenha.Text + "'";
+                SqlDataAdapter adapter = new SqlDataAdapter(query, con);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                if (dt.Rows.Count == 1)
                 {
-                    con.ConnectionString = Properties.Settings.Default.ConexaoBanco;
-                    
-                    string query = "select * from tb_usuario where login_usuario = '"+txbUsuario.Text +"' And senha_usuario = '"+txbSenha.Text +"' ";
-                    SqlDataAdapter ada = new SqlDataAdapter(query, con);
-                    DataTable dt = new DataTable();
-                    ada.Fill(dt);
-
-                    if (dt.Rows.Count == 1)
-                    {
-                        frmCadastroUsuario tela = new frmCadastroUsuario();
-                        this.Hide();
-                        tela.Show();
-                    }
-                    else 
-                    {
-                        MessageBox.Show("Usuário ou Senha inválido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-
+                    frmCadastroUsuario frm = new frmCadastroUsuario();
+                    this.Hide();
+                    frm.Show();
+                    con.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario ou Senha Inválido", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
-            }
-            catch (Exception ex)
-            {
 
-                MessageBox.Show("Erro ao logar" + ex.Message);
+
+
+
+
+
+
+
             }
-            frmCadastroUsuario frm = new frmCadastroUsuario();
-            frm.Show();
-            this.Hide();
         }
     }
 }

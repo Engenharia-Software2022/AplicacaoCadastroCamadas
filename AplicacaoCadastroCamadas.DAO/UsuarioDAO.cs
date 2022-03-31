@@ -25,7 +25,7 @@ namespace AplicacaoCadastroCamadas.DAO
                 cmd.CommandType = CommandType.Text;
                 con.Open();
 
-                //Parei aqui erro, consulta parametrizada pedindo parametros
+                
                 cmd.CommandText = "insert into tb_usuario ([datacadastro_usuario], [nome_usuario], [login_usuario], [senha_usuario], [email_usuario], [cpf_usuario], [status_usuario])" + 
                                     "values (@datacadastro_usuario, @nome_usuario, @login_usuario, @senha_usuario, @email_usuario, @cpf_usuario, @status_usuario)";
 
@@ -86,10 +86,11 @@ namespace AplicacaoCadastroCamadas.DAO
 
                 return listaUsuarioDto;
 
-
-
-
-            }
+            }  
         }
+
+        
+
+
     }
 }
