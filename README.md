@@ -62,4 +62,4 @@ Para utilizar o sistema de cadastro o usuário deverá:
 ### Licenças
 
 _MIT License_
-_Copyright   ©   2020 Felipe Bacelo Rodrigues_
+_Copyright   ©   2020 Marcos Antonio Garcia_
